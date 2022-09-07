@@ -164,7 +164,7 @@ section img {
   color: #fff;
   white-space: nowrap;
   font-size: 7.5vw;
-  transform: translateY(-160px);
+  transform: translateY(-130px);
 }
 
 #parrots_flying_red {
@@ -187,7 +187,7 @@ section img {
   color: #513ec0;
   font-size: 1.2em;
   z-index: 0;
-  transform: translate(35px, 100px);
+  transform: translate(30px, 100px);
 }
 
 #mintbtn {
