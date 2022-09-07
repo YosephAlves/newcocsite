@@ -1,0 +1,318 @@
+@font-face {
+  font-family: 'KG HAPPY Solid';
+  src: url('KGHAPPYSolid.eot'); /* IE9 Compat Modes */
+  src: url('KGHAPPYSolid.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('KGHAPPYSolid.woff2') format('woff2'), /* Super Modern Browsers */
+       url('KGHAPPYSolid.woff') format('woff'), /* Pretty Modern Browsers */
+       url('KGHAPPYSolid.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('KGHAPPYSolid.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'KG HAPPY Solid';
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+  background: linear-gradient(#513dbf,#75befa);
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #fff;
+  width: 230px;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: translateX(35px);
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 0.5em;
+}
+
+header ul li a:hover, header ul li a.active {
+  background:#fff;
+  color: #513ec0;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.lake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.water {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: linear-gradient(to top,rgb(10, 30, 66), transparent);
+  z-index: 1;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: linear-gradient(to bottom,rgb(10, 30, 66), transparent);
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+#text{
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  transform: translateY(-220px);
+}
+
+#parrots_flying_red {
+  width: 70px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(-220px);
+}
+
+#submergebtn {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 30px;
+  background: #fff;
+  color: #513ec0;
+  font-size: 1.2em;
+  z-index: 0;
+  transform: translate(35px, 100px);
+}
+
+#mintbtn {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: #fff;
+  color: #513ec0;
+  font-size: 1.5em;
+  z-index: 0;
+  transform: translateY(100px);
+}
+
+#parrots_flying_yellow {
+  width: 120px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(-120px) rotateY(180deg);
+}
+
+#blue_fish {
+  width: 120px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  transform: translate(-100px, 0px) rotateY(180deg);
+}
+
+#brown_fish {
+  width: 120px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  transform: translate(200px, -120px) rotateY(180deg);
+}
+
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background-color: rgb(7, 10, 27);
+}
+
+.sec h2 {
+  font: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #fff;
+} 
+
+p.loading {
+  display: flex;
+  justify-content: center;
+  transform: translate(0px, 597px); 
+  font-family: Bangers;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(208, 220, 255);
+}
+
+.button {
+  display: block;
+}
+
+.button:hover {
+  transform: translateY(2px);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/images/octo-brc.png');
+  width: 0%;
+  animation: loader 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+      transform: rotate(36deg);
+    }
+    
+    10% {
+      transform: rotate(72deg);
+    }
+    
+    20% {
+      transform: rotate(108deg);
+    }
+    
+    30% {
+      transform: rotate(144deg);
+    }
+    
+    40% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(216deg);
+    }
+    
+    60% {
+      transform: rotate(252deg);
+    }
+    
+    70% {
+      transform: rotate(288deg);
+    }
+    
+    80% {
+      transform: rotate(324deg);
+    }
+    
+    90% {
+      transform: rotate(360deg)
+    }
+
+    100% {
+      transform: rotate(396deg)
+    } 
+}
+
+@media (max-width: 925px) {
+  header ul, #text    {
+   display: none;
+ }
+}
