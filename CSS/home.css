@@ -171,7 +171,7 @@ section img {
   border-radius: 30px;
   background: #fff;
   color: #513ec0;
-  font-size: 2em;
+  font-size: 1.8em;
   z-index: 0;
   transform: translate(30px, 100px);
 }
@@ -185,7 +185,7 @@ section img {
   border-radius: 30px;
   background: #fff;
   color: #513ec0;
-  font-size: 2em;
+  font-size: 1.8em;
   z-index: 0;
   transform: translateY(100px);
 }
