@@ -27,7 +27,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 30px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +40,8 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+  position: relative;
+  transform: translateX(80px);
 }
 
 header ul {
