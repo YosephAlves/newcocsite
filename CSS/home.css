@@ -171,7 +171,7 @@ section img {
   display: flex;
   margin: 0 auto;
   position: relative;
-  transform: translate(-100px, 100px) rotateY(180deg);
+  transform: translate(-100px, 0px) rotateY(180deg);
 }
 
 #brown_fish {
