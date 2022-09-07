@@ -40,7 +40,6 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transform: translateX(10px);
 }
 
 header ul {
