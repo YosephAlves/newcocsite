@@ -312,17 +312,8 @@ p.loading {
     } 
 }
 
-@media (min-width: 925px) {
-  .logomobile {
-   display: none;
- }
-}
-
 @media (max-width: 925px) {
   header ul, header .logo, #text    {
    display: none;
  }
 }
-
-
-
