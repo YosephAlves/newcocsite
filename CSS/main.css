@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 body, html {
   height: 100%;
   margin: 0%;
   color: rgb(0, 0, 0);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Special Elite';
   overflow: hidden;
 }
 
@@ -71,7 +73,7 @@ p.sidewritting {
   writing-mode: vertical-rl; 
   text-orientation: mixed;
   transform: translate(-15px, -290px);
-  font-family: Another Typewriter;
+  font-family: Special Elite;
   font-size: 15px;
   color: rgb(66, 66, 66);
 }
@@ -80,7 +82,7 @@ p.bottomwritting {
   writing-mode: horizontal-tb;
   text-orientation: mixed;
   transform: translate(24px, -290px);
-  font-family: Another Typewriter;
+  font-family: Special Elite;
   font-size: 15px;
   color: rgb(66, 66, 66);
 }
@@ -88,8 +90,8 @@ p.bottomwritting {
 p.topwrittingTwitter { 
   writing-mode: horizontal-tb;
   text-orientation: mixed;
-  transform: translate(115px, -1266px);
-  font-family: Another Typewriter;
+  transform: translate(115px, -1269px);
+  font-family: Special Elite;
   font-size: 15px;
   color: rgb(66, 66, 66);
   position: relative;
@@ -98,8 +100,8 @@ p.topwrittingTwitter {
 p.topwrittinggram { 
   writing-mode: horizontal-tb;
   text-orientation: mixed;
-  transform: translate(16px, -1316px);
-  font-family: Another Typewriter;
+  transform: translate(18px, -1316px);
+  font-family: Special Elite;
   font-size: 15px;
   color: rgb(66, 66, 66);
   position: relative;
@@ -108,8 +110,8 @@ p.topwrittinggram {
 .symboltop {
   writing-mode: horizontal-tb;
   text-orientation: mixed;
-  transform: translate(108px, -1366px);
-  font-family: Another Typewriter;
+  transform: translate(108px, -1362px);
+  font-family: Special Elite;
   font-size: 15px;
   color: rgb(66, 66, 66);
   width: 100px;
@@ -131,7 +133,7 @@ p.loading {
   display: flex;
   justify-content: center;
   transform: translate(0px, -1130px); 
-  font-family: Bangers;
+  font-family: Special Elite;
   font-style: normal;
   font-size: 30px;
   color: rgb(208, 220, 255);

@@ -1,18 +1,10 @@
-@font-face {
-  font-family: 'KG HAPPY Solid';
-  src: url('KGHAPPYSolid.eot'); /* IE9 Compat Modes */
-  src: url('KGHAPPYSolid.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('KGHAPPYSolid.woff2') format('woff2'), /* Super Modern Browsers */
-       url('KGHAPPYSolid.woff') format('woff'), /* Pretty Modern Browsers */
-       url('KGHAPPYSolid.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('KGHAPPYSolid.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Special+Elite&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'KG HAPPY Solid';
+  font-family: 'Caveat Brush';
   scroll-behavior: smooth;
 }
 
@@ -37,7 +29,6 @@ header .logo {
   color: #fff;
   width: 230px;
   text-decoration: none;
-  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -47,7 +38,6 @@ header .logo {
   color: #fff;
   width: 230px;
   text-decoration: none;
-  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -78,10 +68,7 @@ header ul li a:hover, header ul li a.active {
 
 #returnarrow {
   position: absolute;
-  font-size: 7.5vw;
   height: 30px;
-  margin: 0 auto;
-  display: flex;
   z-index: 1;
   transform: translate(20px, 30px);
 }
@@ -155,15 +142,14 @@ section img {
   position: absolute;
   color: #fff;
   white-space: nowrap;
-  font-size: 7.5vw;
-  transform: translateY(-160px);
+  font-size: 8.5vw;
+  transform: translateY(-120px);
 }
 
 #logomobile{
   position: absolute;
   color: #fff;
   white-space: nowrap;
-  font-size: 7.5vw;
   transform: translateY(-130px);
 }
 
@@ -185,7 +171,7 @@ section img {
   border-radius: 30px;
   background: #fff;
   color: #513ec0;
-  font-size: 1.2em;
+  font-size: 2.2em;
   z-index: 0;
   transform: translate(30px, 100px);
 }
@@ -199,7 +185,7 @@ section img {
   border-radius: 30px;
   background: #fff;
   color: #513ec0;
-  font-size: 1.5em;
+  font-size: 2.2em;
   z-index: 0;
   transform: translateY(100px);
 }
@@ -238,13 +224,13 @@ section img {
 }
 
 .sec h2 {
-  font: 3.5em;
+  font-size: 3.5em;
   margin-bottom: 10px;
   color: #fff;
 }
 
 .sec p {
-  font-size: 1em;
+  font-size: 2em;
   color: #fff;
 } 
 
@@ -252,7 +238,7 @@ p.loading {
   display: flex;
   justify-content: center;
   transform: translate(0px, 597px); 
-  font-family: Bangers;
+  font-family: Special Elite;
   font-style: normal;
   font-size: 30px;
   color: rgb(208, 220, 255);
