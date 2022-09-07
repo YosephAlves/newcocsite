@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Caveat Brush';
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
