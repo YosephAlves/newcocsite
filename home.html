@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/home.css">
+    <link rel="stylesheet" href="/CSS/slider.css">
     <link rel="Icon" href="/images/octo-brc.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Home | Cracked Octopus Club</title>
@@ -41,14 +42,32 @@
         <img class="water" src="/images/Landscape/backunderwater.png" id="backunderwater">
         <img class="water" src="/images/Landscape/bubbles.png" id="bubbles">
         <img class="water" src="/images/Landscape/castle.png" id="castle">
+        <a href="mintbtn" id="mintbtn">Mint</a>
+        <section id="slider">
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+        
+            <label style="height: 400px; width:400px" for="s1" id="slide1"></label>
+        
+            <label style="height: 400px; width:400px" for="s2" id="slide2"></label>
+        
+            <label style="height: 400px; width:400px" for="s3" id="slide3"></label>
+        
+            <label style="height: 400px; width:400px" for="s4" id="slide4"></label>
+        
+            <label style="height: 400px; width:400px" for="s5" id="slide5"></label>
+        </section>
         <img class="water" src="/images/Landscape/brownfish.png" id="brown_fish">
         <img class="water" src="/images/Landscape/bluefish.png" id="blue_fish">
     </section>
-     
+
     <div class="sec" id="sec">
     
         <h2>Art Work</h2>
-     
+
     </div>
 
 <script>
@@ -68,9 +87,9 @@
     moon.style.top = value * 0.25 + 'px';
     parrots_flying_red.style.left = value * 0.25 + 'px';
     parrots_flying_yellow.style.left = value * (-0.25) + 'px';
+    
 })
 </script>
-    
 <script>
     let bubbles = document.getElementById('bubbles');
     let castle = document.getElementById('castle');
