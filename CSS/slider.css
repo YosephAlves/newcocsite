@@ -10,7 +10,7 @@ body {
     position: absolute;
     width: 100%;
     height: 20vw;
-    margin: 120px auto;
+    margin: 250px auto;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
     transform-style: preserve-3d;
@@ -38,6 +38,10 @@ input[type=radio] {
 }
 
 #slider label {
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
     position: absolute;
     top: 0;
     color: white;
@@ -52,27 +56,23 @@ input[type=radio] {
 }
   
 #slide1 {
-    background: center url(/images/2623.png);
+    background: url(/images/2623.png);
 }
   
 #slide2 {
-    position: absolute;
-    background: center url(/images/942.png);
+    background: url(/images/942.png);
 }
   
 #slide3 {
-    position: absolute;
-    background: center url(/images/5293.png);
+    background: url(/images/5293.png);
 }
   
 #slide4 {
-    position: absolute;
-    background: center url(/images/85.png);
+    background: url(/images/85.png);
 }
   
 #slide5 {
-    position: absolute;
-    background: center url(/images/5376.png);
+    background: url(/images/97.png);
 }
  
 #s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3, #s4:checked ~ #slide4, #s5:checked ~ #slide5 {
@@ -82,23 +82,23 @@ input[type=radio] {
   
  #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(15%, 0, -100px);
+    transform: translate3d(15%, 0, -30px);
 }
   
   
  
 #s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(30%, 0, -250px);
+    transform: translate3d(30%, 0, -100px);
 }
   
  
 #s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
     box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(-30%, 0, -250px);
+    transform: translate3d(-30%, 0, -100px);
 }
   
 #s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(-15%, 0, -100px);
+    transform: translate3d(-15%, 0, -30px);
 }
