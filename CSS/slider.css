@@ -10,7 +10,7 @@ body {
     position: absolute;
     width: 100%;
     height: 20vw;
-    margin: 150px auto;
+    margin: 170px auto;
     font-family: 'Helvetica Neue', sans-serif;
     perspective: 1400px;
     transform-style: preserve-3d;
