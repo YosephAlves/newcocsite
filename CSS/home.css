@@ -140,6 +140,7 @@ section img {
 }
 
 #text{
+  font-family: Caveat Brush;
   position: absolute;
   color: #fff;
   white-space: nowrap;
