@@ -52,6 +52,7 @@
     </div>
 
 <script>
+    let submergebtn = document.getElementById('submergebtn');
     let parrots_flying_red = document.getElementById('parrots_flying_red')
     let parrots_flying_yellow = document.getElementById('parrots_flying_yellow');
     let big_mountain = document.getElementById('big_mountain');
@@ -61,17 +62,16 @@
 
     window.addEventListener('scroll', function(){
     let value = window.scrollY;
+    submergebtn.style.top = value * (0.10) + 'px';
     big_mountain.style.top = value * 0.20 + 'px';
     little_mountain.style.top = value * 0.05 + 'px';
     moon.style.top = value * 0.25 + 'px';
     parrots_flying_red.style.left = value * 0.25 + 'px';
     parrots_flying_yellow.style.left = value * (-0.25) + 'px';
-    
 })
 </script>
+    
 <script>
-    let submergebtn = document.getElementById('submergebtn');
-    let mintbtn = document.getElementById('mintbtn');
     let bubbles = document.getElementById('bubbles');
     let castle = document.getElementById('castle');
     let brown_fish = document.getElementById('brown_fish');
@@ -79,8 +79,6 @@
 
     window.addEventListener('scroll', function(){
     let value = window.scrollY;
-    submergebtn.style.top = value * (0.10) + 'px';
-    mintbtn.style.top = value * (0.10) + 'px';
     bubbles.style.left = value * (-0.20) + 'px';
     castle.style.top = value * (0.05) + 'px';
     brown_fish.style.left = value * (-0.15) + 'px';
