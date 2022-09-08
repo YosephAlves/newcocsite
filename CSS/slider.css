@@ -338,7 +338,7 @@ p.loading {
 }
 
 @media (max-width: 925px) {
-  header ul, header .logo, #text, #brown_fish {
+  header ul, header .logo, #text {
    display: none;
  }
 }
