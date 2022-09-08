@@ -34,15 +34,6 @@ header .logo {
   position: relative;
 }
 
-header .logo {
-  color: #fff;
-  width: 230px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
-}
-
 header ul {
   display: flex;
   justify-content: center;
@@ -177,20 +168,6 @@ section img {
   transform: translate(30px, 100px);
 }
 
-#mintbtn {
-  display: flex;
-  position: relative;
-  margin: 0 auto;
-  text-decoration: none;
-  padding: 10px 30px;
-  border-radius: 40px;
-  background: #fff;
-  color: #513ec0;
-  font-size: 1.5em;
-  z-index: 0;
-  transform: translateY(100px);
-}
-
 #parrots_flying_yellow {
   width: 120px;
   height: auto;
@@ -220,7 +197,10 @@ section img {
 
 .sec {
   position: relative;
-  padding: 100px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
   background-color: rgb(7, 10, 27);
 }
 
