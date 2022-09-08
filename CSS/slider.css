@@ -1,101 +1,344 @@
-body {
-    margin: 0;
-    background: #EEE;
-    user-select: none;
-    font-family: sans-serif;
-}
-  
-  
-#slider {
-    position: absolute;
-    width: 100%;
-    height: 20vw;
-    margin: 250px auto;
-    font-family: 'Helvetica Neue', sans-serif;
-    perspective: 1400px;
-    transform-style: preserve-3d;
-}
-  
-input[type=radio] {
-    position: relative;
-    top: 145%;
-    left: 50%;
-    width: 18px;
-    height: 18px;
-    margin: 0 15px 0 0;
-    opacity: 0.4;
-    transform: translateX(-83px);
-    cursor: pointer;
-}
-  
-  
-input[type=radio]:nth-child(5) {
-    margin-right: 0px;
-}
-  
-input[type=radio] {
-    opacity: 0;
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@800&family=Special+Elite&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
-#slider label {
-    height: auto; 
-    width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
-    position: absolute;
-    top: 0;
-    color: white;
-    font-size: 70px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 400ms ease;
-}
-  
-#slide1 {
-    background: url(/images/2623.png);
-}
-  
-#slide2 {
-    background: url(/images/942.png);
-}
-  
-#slide3 {
-    background: url(/images/5293.png);
-}
-  
-#slide4 {
-    background: url(/images/85.png);
-}
-  
-#slide5 {
-    background: url(/images/97.png);
-}
- 
-#s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3, #s4:checked ~ #slide4, #s5:checked ~ #slide5 {
-    box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
-    transform: translate3d(0%, 0, 0px);
+body{
+  min-height: 100vh;
+  background: linear-gradient(#513dbf,#75befa);
+  overflow-x: hidden;
 }
 
- #s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
-    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(15%, 0, -60px);
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
-    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(30%, 0, -200px);
+header .logo {
+  color: #fff;
+  width: 230px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
 }
 
-#s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
-    box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
-    transform: translate3d(-30%, 0, -200px);
+header .logo {
+  color: #fff;
+  width: 230px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
 }
 
-#s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
-    box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
-    transform: translate3d(-15%, 0, -60px);
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 0.5em;
+}
+
+header ul li a:hover, header ul li a.active {
+  background:#fff;
+  color: #513ec0;
+}
+
+#returnarrow {
+  position: absolute;
+  height: 30px;
+  z-index: 1;
+  transform: translate(20px, 30px);
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.lake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.water {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: linear-gradient(to top,rgb(10, 30, 66), transparent);
+  z-index: 1;
+}
+
+section#slider::before, section#slider::after{
+  display: none;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background: linear-gradient(to bottom,rgb(10, 30, 66), transparent);
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+section img {
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+#text{
+  font-family: Caveat Brush;
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 8.5vw;
+  transform: translateY(-120px);
+}
+
+#logomobile{
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  transform: translateY(-120px);
+}
+
+#parrots_flying_red {
+  width: 70px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(-220px);
+}
+
+#submergebtn {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 40px;
+  background: #fff;
+  color: #513ec0;
+  font-size: 1.5em;
+  z-index: 0;
+  transform: translate(30px, 100px);
+}
+
+#mintbtn {
+  display: flex;
+  position: absolute;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #513ec0;
+  font-size: 1.5em;
+  z-index: 0;
+  transform: translate(0px, 150px);
+}
+
+#parrots_flying_yellow {
+  width: 120px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(-120px) rotateY(180deg);
+}
+
+#blue_fish {
+  width: 120px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  transform: translate(-100px, -200px) rotateY(180deg);
+}
+
+#brown_fish {
+  width: 120px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  transform: translate(200px, 50px) rotateY(180deg);
+}
+
+.sec {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgb(7, 10, 27);
+}
+
+.sec h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sec p {
+  font-size: 2em;
+  color: #fff;
+} 
+
+p.loading {
+  display: flex;
+  justify-content: center;
+  transform: translate(0px, 597px); 
+  font-family: Special Elite;
+  font-style: normal;
+  font-size: 30px;
+  color: rgb(208, 220, 255);
+}
+
+.button {
+  display: block;
+}
+
+.button:hover {
+  transform: translateY(2px);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/images/octo-brc.png');
+  width: 0%;
+  animation: loader 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+      transform: rotate(36deg);
+    }
+    
+    10% {
+      transform: rotate(72deg);
+    }
+    
+    20% {
+      transform: rotate(108deg);
+    }
+    
+    30% {
+      transform: rotate(144deg);
+    }
+    
+    40% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(216deg);
+    }
+    
+    60% {
+      transform: rotate(252deg);
+    }
+    
+    70% {
+      transform: rotate(288deg);
+    }
+    
+    80% {
+      transform: rotate(324deg);
+    }
+    
+    90% {
+      transform: rotate(360deg)
+    }
+
+    100% {
+      transform: rotate(396deg)
+    } 
+}
+
+@media (min-width: 925px) {
+  #logomobile, #returnarrow{
+   display: none;
+ }
+}
+
+@media (max-width: 925px) {
+  header ul, header .logo, #text, #brown_fish {
+   display: none;
+ }
 }
