@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@800&family=Special+Elite&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;800&family=Special+Elite&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -34,15 +33,6 @@ header .logo {
   position: relative;
 }
 
-header .logo {
-  color: #fff;
-  width: 230px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
-}
-
 header ul {
   display: flex;
   justify-content: center;
@@ -58,12 +48,12 @@ header ul li a {
   text-decoration: none;
   padding: 6px 15px;
   color: #fff;
-  border-radius: 0.5em;
+  border-radius:3em;
 }
 
 header ul li a:hover, header ul li a.active {
-  background:#fff;
-  color: #513ec0;
+  background: rgb(255, 243, 218);
+  color: #3d375f;
 }
 
 #returnarrow {
@@ -113,7 +103,7 @@ section::before {
   height: 100px;
   margin-left: 0px;
   margin-right: 0px;
-  background: linear-gradient(to top,rgb(10, 30, 66), transparent);
+  background: linear-gradient(to top,rgb(16, 28, 97), transparent);
   z-index: 1;
 }
 
@@ -130,7 +120,7 @@ section::after {
   height: 100px;
   margin-left: 0px;
   margin-right: 0px;
-  background: linear-gradient(to bottom,rgb(10, 30, 66), transparent);
+  background: linear-gradient(to bottom,rgb(16, 28, 97), transparent);
   z-index: 1;
   transform: translateY(100px);
 }
@@ -145,7 +135,7 @@ section img {
 #text{
   font-family: Caveat Brush;
   position: absolute;
-  color: #fff;
+  color: rgb(255, 243, 218);
   white-space: nowrap;
   font-size: 8.5vw;
   transform: translateY(-120px);
@@ -174,8 +164,8 @@ section img {
   text-decoration: none;
   padding: 8px 25px;
   border-radius: 40px;
-  background: #fff;
-  color: #513ec0;
+  background: rgb(255, 243, 218);
+  color: #3d375f;
   font-size: 1.5em;
   z-index: 0;
   transform: translate(30px, 100px);
@@ -188,8 +178,8 @@ section img {
   text-decoration: none;
   padding: 10px 30px;
   border-radius: 40px;
-  background: #fff;
-  color: #513ec0;
+  background: rgb(255, 243, 218);
+  color: #3d375f;
   font-size: 1.5em;
   z-index: 0;
   transform: translate(0px, 220px);
@@ -224,22 +214,29 @@ section img {
 
 .sec {
   position: relative;
-  padding-top: 120px;
+  padding-top: 150px;
   padding-bottom: 120px;
-  padding-left: 100px;
-  padding-right: 100px;
-  background-color: rgb(7, 10, 27);
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: rgb(16, 28, 97);
 }
 
 .sec h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
   color: #fff;
+  font-style: italic;
+  text-align: center;
 }
 
 .sec p {
-  font-size: 2em;
+  font-size: 1.25em;
   color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 35em;
+  height: auto;
+  letter-spacing: 0,5px;
 } 
 
 p.loading {
