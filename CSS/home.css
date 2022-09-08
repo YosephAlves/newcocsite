@@ -192,7 +192,7 @@ section img {
   color: #513ec0;
   font-size: 1.5em;
   z-index: 0;
-  transform: translate(0px, 200px);
+  transform: translate(0px, 150px);
 }
 
 #parrots_flying_yellow {
@@ -210,7 +210,7 @@ section img {
   display: flex;
   margin: 0 auto;
   position: relative;
-  transform: translate(-100px, 0px) rotateY(180deg);
+  transform: translate(-100px, -240px) rotateY(180deg);
 }
 
 #brown_fish {
@@ -219,7 +219,7 @@ section img {
   display: flex;
   margin: 0 auto;
   position: relative;
-  transform: translate(200px, -120px) rotateY(180deg);
+  transform: translate(200px, 50px) rotateY(180deg);
 }
 
 .sec {
