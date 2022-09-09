@@ -7,7 +7,8 @@
   scroll-behavior: smooth;
 }
 
-body, body{
+html, body{
+  width: 100%;
   min-height: 100vh;
   background: linear-gradient(#513dbf,#75befa);
   overflow-x: hidden;
