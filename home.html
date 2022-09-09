@@ -25,7 +25,7 @@
             <li><a href="#">About</a></li>
         </ul>
     </header>
-    <section>
+    <section id="lake">
         <img class="lake" src="/images/Landscape/moon.png" id="moon">
         <img class="lake" src="/images/Landscape/big mountain.png" id="big_mountain">
         <h2 id="text">COC</h2>
@@ -33,16 +33,34 @@
         <img class="lake" src="/images/Landscape/lake.png" id="lake">
         <h2 id="logomobile" style="height: 300px;"> <img src="/images/Logo COC w Octopus.png"></h2>
         <img class="lake" src="/images/Landscape/parrots_flying_red.png" id="parrots_flying_red">
-        <a href="#mintunder" id="submergebtn">Submerge</a>
+        <a href="#sec" id="submergebtn">Submerge</a>
         <img class="lake" src="/images/Landscape/parrots_flying_yellow.png" id="parrots_flying_yellow">
     </section>
-    
+    <div class="sec" id="sec">
+
+        <h2>Why do we exist?</h2>
+        <p> Octopus Club is a collection of 8,888 Octopus NFT's.<br>
+             The COC Team wants to use the money gathered from the Sales,<br>
+              to develop a Crypto Battle Royale with a NFT Marketplace.<br>
+               The goal is to create a game that offers you, the player,<br>
+                oportunity to withdrawl the funds invested.<br>
+                 You will be able to sell your skins, that you leveled up.<br>
+                  We want an active marketplace!<br>
+                   You wont lock your money into skins ever again.<br>
+                    You are not a gamer?<br> It's fine, we will work something out.<br>
+                     We hope to have you onboard for our Adventure.<br>
+                      Ideas are flying of the shelves!<br> You can tell us yours!<br>
+                       By Rafael & Joseph Alves</p>
+                       <br>
+                       <a href="#" id="morebtn">More</a>
+    </div>
     <section id="mintunder">
         <img class="water" src="/images/Landscape/backunderwater.png" id="backunderwater">
         <img class="water" src="/images/Landscape/bubbles.png" id="bubbles">
-        <img class="water" src="/images/Landscape/castle.png" id="castle">
+        <img class="castle" src="/images/Landscape/castle.png" id="castle">
         <a href="#" id="mintbtn">Mint</a>
-        <section id="slider">
+        
+  <!--  <section id="slider">
             <input type="radio" name="slider" id="s1" checked>
             <input type="radio" name="slider" id="s2">
             <input type="radio" name="slider" id="s3">
@@ -58,17 +76,10 @@
             <label style="height: 250px; width:250px" for="s4" id="slide4"></label>
         
             <label style="height: 250px; width:250px" for="s5" id="slide5"></label>
-        </section>
-        <img class="water" src="/images/Landscape/brownfish.png" id="brown_fish">
+    </section>
+   -->  <img class="water" src="/images/Landscape/brownfish.png" id="brown_fish">
         <img class="water" src="/images/Landscape/bluefish.png" id="blue_fish">
     </section>
-
-    <div class="sec" id="sec">
-
-        <h2>Why do we exist?</h2>
-        <p> Octopus Club is a collection of 8,888 Octopus NFT's. The COC Team wants to use the money gathered from the Sales, to develop a Crypto Battle Royale with a NFT Marketplace. The goal is to create a game that offers you, the player, an opportunity to invest in yourself. You will be able to sell your own bought skins that you leveled up. We want an active marketplace! You wont lock your money into skins ever again. You are not a gamer? It's fine, passive income is here for that reason. We hope to have you onboard for our Adventure. Ideas are flying of the shelves! You can tell us yours! By Rafael & Joseph Alves</p>
-    
-    </div>
 
     <div class="sec" id="sec">
 
@@ -103,7 +114,6 @@
             Road Map V2 gets initiated.
             Battle Royale development
             gets iniciated</p>
-
     </div>
 
     <div class="sec" id="sec">
@@ -158,6 +168,7 @@
 })
 </script>
 <script>
+    let mintbtn = document.getElementById('mintbtn');
     let bubbles = document.getElementById('bubbles');
     let castle = document.getElementById('castle');
     let brown_fish = document.getElementById('brown_fish');
@@ -165,6 +176,7 @@
 
     window.addEventListener('scroll', function(){
     let value = window.scrollY;
+    mintbtn.style.bottom = value * (0.2) + 'px';
     bubbles.style.left = value * (-0.20) + 'px';
     castle.style.top = value * (0.05) + 'px';
     brown_fish.style.left = value * (-0.15) + 'px';
