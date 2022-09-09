@@ -173,13 +173,13 @@ section img {
   background: rgb(255, 243, 218);
   color: #3d375f;
   font-size: 1.5em;
-  z-index: 0;
-  transform: translate(0px, 150px);
+  z-index: 1;
+  transform: translate(0px, 242px);
 }
 
 #morebtn {
   width: 100px;
-  height: 60px;
+  height: 50px;
   font-size: 2cm;
   display: flex;
   position: relative;
@@ -191,7 +191,7 @@ section img {
   border-radius: 40px;
   background: rgb(255, 243, 218);
   color: #3d375f;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-top: 100px;
   margin-bottom: 35px;
 }
