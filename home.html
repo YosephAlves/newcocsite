@@ -170,7 +170,6 @@
 })
 </script>
 <script>
-    let mintbtn = document.getElementById('mintbtn');
     let bubbles = document.getElementById('bubbles');
     let castle = document.getElementById('castle');
     let brown_fish = document.getElementById('brown_fish');
@@ -178,7 +177,6 @@
 
     window.addEventListener('scroll', function(){
     let value = window.scrollY;
-    mintbtn.style.bottom = value * (0.2) + 'px';
     bubbles.style.left = value * (-0.20) + 'px';
     castle.style.top = value * (0.05) + 'px';
     brown_fish.style.left = value * (-0.15) + 'px';
