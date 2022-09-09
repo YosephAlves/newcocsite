@@ -159,7 +159,7 @@ section img {
   background: rgb(255, 243, 218);
   color: #3d375f;
   font-size: 1.5em;
-  z-index: 0;
+  z-index: 1;
   transform: translate(30px, 100px);
 }
 
@@ -174,11 +174,13 @@ section img {
   color: #3d375f;
   font-size: 1.5em;
   z-index: 0;
-  transform: translate(0px, 100px);
+  transform: translate(0px, 150px);
 }
 
 #morebtn {
   width: 100px;
+  height: 60px;
+  font-size: 2cm;
   display: flex;
   position: relative;
   align-items: center;
@@ -189,9 +191,9 @@ section img {
   border-radius: 40px;
   background: rgb(255, 243, 218);
   color: #3d375f;
-  font-size: 1.5em;
-  z-index: 0;
-  transform: translate(0px, 0px);
+  font-size: 1.2em;
+  margin-top: 100px;
+  margin-bottom: 35px;
 }
 
 #parrots_flying_yellow {
@@ -248,7 +250,7 @@ section img {
   text-align: center;
   margin: 0 auto;
   height: auto;
-  letter-spacing: 0,5px;
+  letter-spacing: 0.5px;
 } 
 
 p.loading {
