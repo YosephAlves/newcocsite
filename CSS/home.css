@@ -221,12 +221,14 @@ section img {
 #brown_fish {
   width: 120px;
   height: auto;
-  margin: 0 auto;
-  transform: translate(400px, 150px) rotateY(180deg);
+  display: flex;
+  margin: 0 auto;  
+  position: relative;
+  transform: translate(500px, 150px) rotateY(180deg);
 }
 
 #bubbles {
-  transform: translate(350px, -60px) rotateX(180deg);
+  transform: translate(450px, -60px) rotateX(180deg);
 }
 
 .sec {
