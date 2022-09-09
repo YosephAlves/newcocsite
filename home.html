@@ -16,11 +16,12 @@
     <a href="index.html " style="z-index: 1;" ><img id="returnarrow" src="/images/left-arrow.png"></a>
 
     <header>
-        <a href="index.html " style="z-index: 1;" ><img class="logo" src="/images/Logo COC w Octopus.png"></a>
+        <a href="index.html" style="z-index: 1" ><img class="logo" src="/images/Logo COC w Octopus.png"></a>
         <ul style="z-index: 1;">
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" 
+            style="box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);" class="active">Home</a></li>
             <li><a href="#mintunder">Mint</a></li>
-            <li><a href="#">Art Work</a></li>
+            <li><a href="#sec">Artwork</a></li>
             <li><a href="#">Paper</a></li>
             <li><a href="#">About</a></li>
         </ul>
@@ -82,9 +83,9 @@
    -->  <img class="water" src="/images/Landscape/brownfish.png" id="brown_fish">
         <img class="water" src="/images/Landscape/bluefish.png" id="blue_fish">
     </section>
-
-    <div class="sec" id="sec" id="sec1">
-
+    <div class="sec" id="sec">
+    
+        <br>
         <h2>Art Work</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
             Odit doloremque accusamus perspiciatis at omnis incidunt laborum provident amet,<br> 
@@ -94,6 +95,8 @@
                 Odit doloremque accusamus perspiciatis at omnis incidunt laborum provident amet,<br> 
                  quisquam voluptates quo natus sit asperiores?<br>
                   Dolor voluptatibus tempore deserunt reiciendis in?</p>
+    </div>
+    
     </div>
 
     <div class="sec" id="sec">
@@ -184,7 +187,7 @@
     window.addEventListener('scroll', function(){
     let value = window.scrollY;
     bubbles.style.left = value * (-0.20) + 'px';
-    castle.style.top = value * (0.05) + 'px';
+    castle.style.top = value * (0.10) + 'px';
     brown_fish.style.left = value * (-0.15) + 'px';
     blue_fish.style.left = value * (0.15) + 'px';
 })
